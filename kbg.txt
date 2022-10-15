@@ -1,0 +1,91 @@
+// See https://aka.ms/new-console-template for more informationusing System;
+namespace ABC
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Nhap ki tu dau` tien : K: Keo , B: Bua , G: Giay");
+            Console.WriteLine("Nhap ki tu dau`(IN HOA):");
+            char a = char.Parse(Console.ReadLine());
+            Console.WriteLine("Nhap ki tu hai (IN HOA): ");
+            char b = char.Parse(Console.ReadLine());
+            Console.WriteLine("Ket Qua: ");
+            switch (a)
+            {
+                case 'B':
+                    {
+                        switch (b)
+                        {
+                            case 'K':
+                                Console.WriteLine("nguoi choi 1 thang");
+                                break;
+
+                            case 'B':
+                                Console.WriteLine("Hoa`");
+                                break;
+                            case 'G':
+                                Console.WriteLine("nguoi choi 2 thang");
+                                break;
+                            default:
+                                {
+                                    Console.WriteLine("Cho Ngu");
+                                    break;
+                                }
+                        }
+                        break;
+                    }
+                case 'K':
+                    {
+                        switch (b)
+                        {
+                            case 'G':
+                                Console.WriteLine("nguoi choi 1 thang");
+                                break;
+
+                            case 'K':
+                                Console.WriteLine("Hoa`");
+                                break;
+                            case 'B':
+                                Console.WriteLine("nguoi choi 2 thang");
+                                break;
+                            default:
+                                {
+                                    Console.WriteLine("Cho Ngu");
+                                    break;
+                                }
+                        }
+                        break;
+                    }
+                case 'G':
+                    {
+                        switch (b)
+                        {
+                            case 'B':
+                                Console.WriteLine("nguoi choi 1 thang");
+                                break;
+
+                            case 'G':
+                                Console.WriteLine("Hoa`");
+                                break;
+                            case 'K':
+                                Console.WriteLine("nguoi choi 2 thang");
+                                break;
+                            default:
+                                {
+                                    Console.WriteLine("Cho Ngu");
+                                    break;
+                                }
+                        }
+                        break;
+                    }
+                default:
+                    {
+                        Console.WriteLine("Cho Ngu");
+                    }
+                    break;
+            }
+        }
+    }
+}
+

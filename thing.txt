@@ -1,0 +1,8 @@
+1. StatusBar : styles :dark 
+2. e d f Ap(){
+	return <Login/>
+}
+3. Create Styles.js in component
+4. Leter-spacing 
+5. Formik in formik 
+6. 
